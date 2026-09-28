@@ -18,7 +18,7 @@ public class operatorLogikaWifi12 {
         System.out.print("Apakah akun sedang diblokir? (true/false): ");
         akunDiblokir = sc.nextBoolean();
 
-        if ((mahasiswa || dosen) && !akunDiblokir) {
+        if ((mahasiswa && dosen) && !akunDiblokir) {
             System.out.println("Akses WiFi diberikan");
         } else {
             System.out.println("Akses WiFi ditolak");
