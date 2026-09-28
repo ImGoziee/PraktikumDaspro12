@@ -20,6 +20,9 @@ public class nestedAksesLab12 {
         System.out.print("Apakah pengguna asisten lab? (true/false): ");
         asistenLab = sc.nextBoolean();
 
+        // mahasiswaAktif && !sedangDisanksi && (punyaIzinDosen || asistenLab)
+
+        
         if (mahasiswaAktif && !sedangDisanksi) {
             if (punyaIzinDosen || asistenLab) {
                 System.out.println("Akses laboratorium diberikan");
