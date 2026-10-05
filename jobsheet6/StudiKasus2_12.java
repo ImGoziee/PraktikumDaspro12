@@ -37,6 +37,13 @@ public class StudiKasus2_12 {
                     System.out.println("Status: Dokumen lengkap. " + "Tidak masuk peringkat 1, 2, atau 3. " + "Dana penghargaan tidak diberikan.");
                 }
 
+            } else if (jenisKegiatan.equalsIgnoreCase("PKM")) {
+
+                System.out.println("Status: Dokumen lengkap. " + "Kegiatan PKM memerlukan pengecekan status pendanaan.");
+
+            } else {
+
+                System.out.println("Status: Dokumen lengkap. " + "Jenis kegiatan tidak termasuk BELMAWA, BAKORMA, " + "MANDIRI, atau PKM. Dana penghargaan tidak diberikan.");
             }
         }
     }
