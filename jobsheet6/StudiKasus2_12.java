@@ -8,6 +8,7 @@ public class StudiKasus2_12 {
         String jenisKegiatan;
         int jumlahDokumen;
         int peringkatJuara;
+        int statusPendanaanPKM;
 
         System.out.print("Nama mahasiswa  : ");
         namaMahasiswa = sc.nextLine();
@@ -39,7 +40,19 @@ public class StudiKasus2_12 {
 
             } else if (jenisKegiatan.equalsIgnoreCase("PKM")) {
 
-                System.out.println("Status: Dokumen lengkap. " + "Kegiatan PKM memerlukan pengecekan status pendanaan.");
+                System.out.print("Status pendanaan PKM (1 = lolos, 0 = tidak lolos) : ");
+
+                statusPendanaanPKM = sc.nextInt();
+
+                if (statusPendanaanPKM == 1) {
+
+                    System.out.println("Status: Dokumen lengkap. " + "PKM lolos pendanaan. Dana penghargaan diberikan.");
+
+                } else {
+
+                    System.out.println("Status: Dokumen lengkap. " + "PKM tidak lolos pendanaan. Dana penghargaan tidak diberikan.");
+
+                }
 
             } else {
 
